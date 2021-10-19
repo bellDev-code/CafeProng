@@ -1,0 +1,40 @@
+.MoreViewBttnContainer {
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border: solid 1px #0e1215;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #333333;
+  text-align: center;
+  a:link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  a {
+    max-width: 200px;
+    width: 100%;
+    color: #333333;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+}
+.MoreViewBttnContainer:hover {
+  background-color: #0e1215;
+  color: #ffffff;
+}
+
+@media screen and(max-width:768px) {
+  .MoreViewBttnContainer {
+    max-width: 130px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

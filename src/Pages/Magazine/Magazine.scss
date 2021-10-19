@@ -1,0 +1,201 @@
+.MagazineContainer{
+    .MagazineMain{
+        max-width: 1024px;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .grid-header{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr 8fr 4fr 1fr);
+        justify-items: flex-start;
+        align-items: center;
+        padding: 0 25px;
+    }
+    .grid-contents{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        justify-items: flex-start;
+        align-items: center;
+        border-bottom: 2px solid #444;
+        border-top: 2px solid #444;
+        :nth-last-child(1){
+            border-bottom: initial;
+        }
+    }
+    .grid-list{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr 8fr 4fr 1fr);
+        border-bottom: 1px solid #444;
+        padding: 0 25px;
+        cursor: pointer;
+    }
+    .item{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .title{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .pagination{
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .MagazineContainer{
+        .MagazineMain{
+            max-width: 950px;
+        }
+    }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+    .MagazineContainer{
+        .MagazineMain{
+            max-width: 800px;
+        }
+    }
+}
+  
+  @media screen and (max-width:870px){
+    .MagazineContainer{
+        .MagazineMain{
+            max-width: 700px;
+        }
+    }
+}
+//미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px) {
+    .MagazineContainer{
+        .MagazineMain{
+            padding-bottom: 40px;
+        }
+        .Space{
+            display: none;
+        }
+        .grid{
+            padding: 0 30px;
+            margin-bottom: 20px;
+        }
+        .grid-header, .grid-list{
+            grid-template-columns: repeat(1, 2.5fr 4fr 2fr);
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .MagazineContainer{
+        .grid-header, .grid-list{
+            grid-template-columns: repeat(1, 4fr 5fr);
+            padding: initial;
+        }
+        .Area {
+            display: none;
+        }
+    }
+}
+
+.MagazineTitleContainer{
+
+    .MagazineTitleBox{
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px 0 108px;
+    }
+    .Title{
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 7.5px;
+        text-align: left;
+        color: #444444;
+    }
+    .SubText{
+        font-family: Noto Sans KR;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.85;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .MagazineTitleContainer {
+      .MagazineTitleBox{
+        max-width: 950px;
+      }
+      .SubText{
+          font-size: 12px;
+      }
+    }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+    .MagazineTitleContainer{
+      .MagazineTitleBox{
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .MagazineTitleContainer{
+      .MagazineTitleBox{
+        max-width: 700px;
+      }
+    }
+  }
+
+  //미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px) {
+    .MagazineTitleContainer{
+      margin: 0 30px;
+      .MagazineTitleBox{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .SubText{
+        font-size: 13px;
+        line-height: 1.65;
+        padding-top: 10px;
+        br{
+            display: none;
+        }
+      }
+      .Title{
+        font-size: 22px;
+        line-height: 1.3;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px)  {
+    .MagazineTitleContainer{
+      margin: 0 30px;
+      .Title{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }

@@ -1,0 +1,96 @@
+.ConsultingTitleContainer {
+  .ConsultingTitleBox {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0 80px;
+  }
+  .ConsultingTitleRight {
+    text-align: right;
+  }
+  .ConsultingTitleLeft {
+    font-size: 24.5px;
+    font-weight: 500;
+    letter-spacing: 7.35px;
+    text-align: left;
+    color: #444444;
+    flex: 1 1;
+    font-family: "Montserrat";
+  }
+  .ConsultingTitleRight {
+    flex: 1;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.81;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .ConsultingTitleContainer {
+    .ConsultingTitleBox {
+      max-width: 950px;
+    }
+    .ConsultingTitleRight {
+      font-size: 12px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+  .ConsultingTitleContainer{
+    .ConsultingTitleBox{
+      max-width: 800px;
+    }
+    .ConsultingTitleRight{
+      br{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:870px){
+  .ConsultingTitleContainer{
+    .ConsultingTitleBox{
+      max-width: 700px;
+    }
+  }
+}
+//미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px) {
+  .ConsultingTitleContainer{
+    margin: 0 30px;
+    .ConsultingTitleBox{
+      flex-direction: column;
+      padding: 30px 0 40px;
+    }
+    .ConsultingTitleRight{
+      font-size: 13px;
+      line-height: 1.65;
+      padding-top: 10px;
+    }
+    .ConsultingTitleLeft{
+      font-size: 22px;
+      br{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px)  {
+  .ConsultingTitleContainer{
+    margin: 0 30px;
+    .ConsultingTitleLeft{
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

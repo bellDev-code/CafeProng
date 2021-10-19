@@ -1,0 +1,325 @@
+.skeletonImg {
+  height: 100%;
+  border-radius: none !important;
+}
+
+.EquipmentBodyMain-container {
+  max-width: 1074px;
+  width: 100%;
+  margin: 0px auto 80px auto;
+  text-align: center;
+
+  .photo-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .titleWrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      align-items: flex-end;
+      height: 33px;
+      .title {
+        margin-bottom: 0;
+      }
+      .date {
+        color: #999999;
+        text-decoration: underline;
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+    }
+    > div {
+      width: 29%;
+      margin: 0px 2.1% 70px 2.1%;
+      float: left;
+    }
+    .imgContainer {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .EquipmentBodyMain-container {
+    max-width: 990px;
+  }
+}
+
+//미디어쿼리 분기점 Tablet
+@media screen and (max-width: 1023px) {
+  .EquipmentBodyMain-container {
+    max-width: 840px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .EquipmentBodyMain-container {
+    max-width: 740px;
+  }
+}
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width: 767px) {
+  .equipmentContent {
+    margin: 0 30px;
+    .EquipmentBodyMain-container {
+      margin: 0px auto 40px auto;
+      .photo-list {
+        > div {
+          width: 100%;
+          margin: 0 0 50px;
+        }
+        .imgContainer {
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+.EquipmentTitleContainer {
+  .EquipmentTitleBox {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0 80px;
+  }
+  .EquipmentTitleLeft {
+    font-family: Montserrat;
+    font-size: 24.5px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 7.35px;
+    text-align: left;
+    color: #444444;
+  }
+  .EquipmentTitleRight {
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.81;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .EquipmentTitleContainer {
+    .EquipmentTitleBox {
+      max-width: 950px;
+    }
+    .EquipmentTitleRight {
+      font-size: 12px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet
+@media screen and (max-width: 1023px) {
+  .EquipmentTitleContainer {
+    .EquipmentTitleBox {
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .EquipmentTitleContainer {
+    .EquipmentTitleBox {
+      max-width: 700px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width: 767px) {
+  .EquipmentTitleContainer {
+    margin: 0 30px;
+    .EquipmentTitleBox {
+      flex-direction: column;
+      padding: 30px 0 40px;
+    }
+    .EquipmentTitleRight {
+      font-size: 13px;
+      line-height: 1.65;
+      padding-top: 10px;
+      br {
+        display: none;
+      }
+    }
+    .EquipmentTitleLeft {
+      font-size: 22px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .EquipmentTitleContainer {
+    margin: 0 30px;
+    .EquipmentTitleLeft {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.EquipmentBodyBox-container {
+  display: flex;
+  flex-direction: column;
+  // max-width: 223px;
+  width: 100%;
+  margin-bottom: 60px;
+  cursor: pointer;
+  div {
+    text-decoration: none;
+    > div {
+      text-align: left;
+      &:nth-child(1) {
+        display: flex;
+        position: relative;
+
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 30px;
+          height: 35px;
+          top: -15px;
+          left: 10px;
+          font-size: 11px;
+          color: #ffffff;
+          padding: 4px 8px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      // type
+      &:nth-child(2) {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #444444;
+        margin-bottom: 20px;
+      }
+      // title
+      &:nth-child(3) {
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: left;
+        color: #999999;
+      }
+
+      // description
+      &:nth-child(4) {
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: left;
+        color: #999999;
+        font-family: "Montserrat-light";
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .EquipmentBodyBox-container {
+    display: flex;
+    flex-direction: column;
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 60px;
+    a {
+      text-decoration: none;
+      > div {
+        text-align: left;
+        &:nth-child(1) {
+          display: flex;
+          position: relative;
+          margin-bottom: 21px;
+          > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 21px;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            font-size: 11px;
+            color: #ffffff;
+            padding: 4px 8px;
+          }
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+        &:nth-child(2) {
+          color: #999999;
+          font-size: 11.5px;
+          margin-bottom: 10px;
+        }
+        // title
+        &:nth-child(3) {
+          color: #333333;
+          font-size: 13px;
+          margin-bottom: 15px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 223px;
+          max-height: 36px;
+          width: 100%;
+        }
+        &:nth-child(4) {
+          color: #a5a5a5;
+          font-size: 11px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  // 모바일 아코디안 패딩수정
+  .MuiCollapse-wrapper {
+    .MuiAccordionDetails-root {
+      padding: 0px;
+    }
+  }
+}

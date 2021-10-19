@@ -1,0 +1,155 @@
+.Board2Container {
+  .Board2Box {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+    .Board2Contents {
+      .Board2DataTop {
+        display: flex;
+        border-top: solid 2px #333333;
+        border-bottom: solid 1px #333333;
+        padding: 25px 0;
+        padding-left: 25px;
+        font-family: Montserrat;
+        .DataTopText {
+          margin-right: 100px;
+        }
+      }
+      .Board2DataBottom {
+        display: flex;
+        border-bottom: solid 1px #333333;
+        padding: 25px 0;
+        padding-left: 25px;
+
+        .BotttomFirstBox {
+          display: flex;
+          margin-right: 130px;
+          .BottomFirstTitle {
+            margin-right: 100px;
+          }
+        }
+        .BotttomSecondBox {
+          display: flex;
+          margin-right: 130px;
+          .BottomSecondTitle {
+            margin-right: 100px;
+          }
+        }
+        .BotttomThirdBox {
+          display: flex;
+          .BottomThirdTitle {
+            margin-right: 100px;
+          }
+        }
+      }
+    }
+  }
+  .Board2Data {
+    font-size: 12px;
+  }
+  .Board2Writing {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    border-bottom: solid 1px #333333;
+    font-size: 11.5px;
+    font-family: "Montserrat-light";
+    .Board2img {
+      margin-bottom: 30px;
+    }
+  }
+  .Board2Btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .BottomFirstText {
+    font-family: "Montserrat-light";
+  }
+  .BottomSecondText {
+    font-family: "Montserrat-light";
+  }
+  .BottomThirdText {
+    font-family: "Montserrat-light";
+  }
+}
+@media screen and (max-width: 768px) {
+  .Board2Container {
+    .Board2Box {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 1024px;
+      .Board2Contents {
+        .Board2DataTop {
+          display: flex;
+          border-top: solid 2px #333333;
+          border-bottom: solid 1px #333333;
+          padding: 25px 0;
+          padding-left: 25px;
+          font-family: "Montserrat-light";
+          .DataTopText {
+            margin-right: 100px;
+          }
+        }
+        .Board2DataBottom {
+          display: flex;
+          border-bottom: solid 1px #333333;
+          padding: 25px 0;
+          padding-left: 25px;
+
+          .BotttomFirstBox {
+            display: flex;
+            margin-right: 130px;
+            .BottomFirstTitle {
+              margin-right: 100px;
+            }
+          }
+          .BotttomSecondBox {
+            display: none;
+          }
+          .BotttomThirdBox {
+            display: none;
+          }
+        }
+      }
+    }
+    .Board2Data {
+      font-size: 12px;
+    }
+    .Board2Writing {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 40px;
+      padding-bottom: 70px;
+      border-bottom: solid 1px #333333;
+      font-size: 11.5px;
+      font-family: "Montserrat-light";
+    }
+    .Board2Btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+    .BottomFirstText {
+      font-family: "Montserrat-light";
+    }
+    .BottomSecondText {
+      font-family: "Montserrat-light";
+    }
+    .BottomThirdText {
+      font-family: "Montserrat-light";
+    }
+  }
+}

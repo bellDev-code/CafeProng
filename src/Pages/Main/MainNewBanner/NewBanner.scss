@@ -1,0 +1,125 @@
+.NewBannerContainer {
+  background-image: url("../../../_asset/images/main/banner-consulting.png");
+  margin-top: 80px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  .NewBannerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+  .NewTitle {
+    font-size: 30px;
+    font-family: Montserrat;
+    line-height: 1;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .NewText {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 2px;
+    padding-bottom: 55px;
+  }
+  .MoreButtonBox {
+    height: 14px;
+    max-width: 96px;
+    width: 100%;
+    border-bottom: solid 1px #333333;
+    display: flex;
+    align-items: center;
+    a {
+      color: #333333;
+    }
+  }
+  .MoreButtonImg {
+    display: flex;
+    padding-right: 5px;
+  }
+
+  .MoreButtonText {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .NewBannerContainer {
+    .NewBannerBox{
+      max-width: 950px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+  .NewBannerContainer{
+    .NewBannerBox{
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width:870px){
+  .NewBannerContainer{
+    .NewBannerBox{
+      max-width: 700px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width:767px){
+.newBanner{
+  .NewBannerContainer{
+    .NewBannerBox{
+      padding: 0 30px;
+    }
+    .NewTitle{
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    .NewText{
+      font-size: 19px;
+      padding-bottom: 40px;
+    }
+  }
+}
+}
+
+@media screen and (max-width:500px) {
+  .NewBannerContainer{
+    margin-top: 40px;
+    .NewTitle{
+      font-size: 20px;
+    }
+    .NewText{
+      font-size: 16px;
+      padding-bottom: 30px;
+    }
+    .MoreButtonText{
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width:350px) {
+  .NewBannerContainer{
+    .NewTitle{
+      font-size: 18px;
+    }
+    .NewText{
+      font-size: 14px;
+    }
+  }
+}

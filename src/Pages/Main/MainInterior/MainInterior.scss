@@ -1,0 +1,157 @@
+.MainInteriorWarper {
+  .MainInteriorContainer {
+    max-width: 1920px;
+    width: 100%;
+    height: 1028px;
+    margin: auto;
+    .MainInteriorBox {
+      max-width: 1024px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding-top: 100px;
+      .MainInteriorContentsBox {
+        padding-right: 115px;
+        .MainInteriorTextBox {
+          a {
+            text-decoration: none;
+          }
+          .MainInteriorBackText {
+          }
+          .MainInteriorTitlleText {
+            padding-top: 100px;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+            color: #0e1215;
+            letter-spacing: -1px;
+            padding-bottom: 40px;
+          }
+          .MainInteriorSubTittleText {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            opacity: 0.5;
+            display: inline;
+            border-bottom: solid 1px #333333;
+          }
+          .MainInteriorText {
+            padding-top: 20px;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 1.71;
+            text-align: left;
+            opacity: 0.5;
+            padding-bottom: 50px;
+          }
+        }
+        .MainInteriorImg3 {
+          padding-top: 100px;
+        }
+      }
+      .MainInteriorImgBox {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        .MainInteriorImgFlexBox {
+          display: flex;
+          .MainInteriorImg1 {
+          }
+          .MainInteriorImg2 {
+          }
+        }
+        .MainInteriorBackImg2 {
+          display: flex;
+          justify-content: flex-end;
+          padding-top: 110px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .MainInteriorWarper {
+    .MainInteriorContainer {
+      max-width: initial;
+      width: 100%;
+      height: auto;
+      .MainInteriorBox {
+        max-width: initial;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        .MainInteriorContentsBox {
+          padding-right: 0px;
+          .MainInteriorTextBox {
+            padding: 0 10px;
+            a {
+              text-decoration: none;
+            }
+            .MainInteriorBackText {
+              display: none;
+            }
+            .MainInteriorTitlleText {
+              padding-top: 50px;
+              font-size: 7vw;
+              font-weight: 500;
+              line-height: 1.2;
+              text-align: left;
+              color: #0e1215;
+              letter-spacing: -1px;
+              padding-bottom: 40px;
+            }
+            .MainInteriorSubTittleText {
+              font-size: 14px;
+              font-weight: bold;
+              text-align: left;
+              color: #0e1215;
+              opacity: 0.5;
+              display: inline;
+              border-bottom: solid 1px #333333;
+            }
+            .MainInteriorText {
+              padding-top: 20px;
+              font-size: 2.5vw;
+              font-weight: bold;
+              line-height: 1.71;
+              text-align: left;
+              color: #0e1215;
+              opacity: 0.5;
+              padding-bottom: 50px;
+            }
+          }
+          .MainInteriorImg3 {
+            padding-top: 50px;
+            > img {
+              width: 100%;
+            }
+          }
+        }
+        .MainInteriorImgBox {
+          padding-top: 50px;
+          display: flex;
+          flex-direction: column;
+          .MainInteriorImgFlexBox {
+            display: flex;
+            .MainInteriorImg1 {
+              display: none;
+            }
+            .MainInteriorImg2 {
+              display: none;
+            }
+          }
+          .MainInteriorBackImg2 {
+            display: none;
+          }
+        }
+      }
+    }
+    .MoreViewBttnContainer {
+      margin: auto;
+    }
+  }
+}

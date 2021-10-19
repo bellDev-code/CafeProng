@@ -1,0 +1,55 @@
+.BoardPreviewContainer {
+  display: none;
+  .BoardPreviewBox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .BoardPreviewContents {
+    display: flex;
+    font-size: 12px;
+    padding: 25px 0;
+    border-top: solid 1px #e3e5e9;
+    cursor: pointer;
+  }
+  .BoardPreviewBtn {
+    margin-right: 20px;
+    padding-left: 25px;
+  }
+  .BoardPreviewNext {
+    max-width: 120px;
+    width: 100%;
+  }
+  .BoardPreviewTitle {
+    font-family: "Montserrat-light";
+  }
+  //////////////
+  .BoardNextBox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .BoardNextContents {
+    display: flex;
+    font-size: 12px;
+    padding: 25px 0;
+    border-top: solid 1px #e3e5e9;
+    border-bottom: solid 1px #e3e5e9;
+  }
+  .BoardNextBtn {
+    margin-right: 20px;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  .BoardNextNext {
+    max-width: 120px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .BoardNextTitle {
+    font-family: "Montserrat-light";
+    cursor: pointer;
+  }
+}

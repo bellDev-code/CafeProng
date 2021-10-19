@@ -1,0 +1,253 @@
+.MainInteriorSlickWrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  // cursor: pointer;
+  *:focus {
+    outline: 0;
+    outline: none;
+  }
+
+  .slick-current {
+    position: relative;
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      z-index: 99;
+      &::before {
+        display: none;
+      }
+    }
+    .slick-prev {
+      left: 30%;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      z-index: 2;
+      transform: translate(0, -50%);
+      background-position: center;
+      background-image: url(../../../_asset/images/common/arrow-left.svg);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      // background: transparent;
+    }
+    .slick-next {
+      z-index: 1;
+      right: 30%;
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-image: url(../../../_asset/images/common/arrow-right.svg);
+    }
+  }
+
+  .MainInteriorImgbox {
+    img {
+      padding: 0 25px;
+    }
+  }
+  .MainInteriorTextboxContainer {
+    max-width: 876px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 98px;
+  }
+  .MainInteriorTextbox {
+    .MainInteriorTextboxTopRow {
+      display: flex;
+      justify-content: space-between;
+
+      .number {
+        font-family: "NotoSerifCJKkr";
+        border-bottom: 1px solid #d7af98;
+        font-size: 25px;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #d7af98;
+        margin-bottom: 15px;
+        margin-top: 30px;
+      }
+      .morebttn {
+        margin-right: 3px;
+        margin-top: 30px;
+        max-width: 200px;
+        width: 100%;
+
+        a {
+          max-width: 200px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        a:-webkit-any-link {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+        }
+        .moretext {
+          margin-right: 11px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: 2.4px;
+          text-align: left;
+          color: #0e1215;
+        }
+      }
+    }
+
+    .titletext {
+      font-family: "NotoSerifCJKkr";
+      font-size: 20px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      // line-height: 3.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #444444;
+      margin-bottom: 15px;
+    }
+    .titletextbottom {
+      font-family: NotoSansCJKkr;
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: #999999;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainInteriorSlickWrapper {
+    width: 94%;
+    max-width: 500px;
+    margin: auto;
+    // cursor: pointer;
+    *:focus {
+      outline: 0;
+      outline: none;
+    }
+
+    .slick-current {
+      position: relative;
+      .slick-prev,
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        &::before {
+          display: none;
+        }
+      }
+      .slick-prev {
+        left: calc(10%);
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        transform: translate(0, -50%);
+        background-position: center;
+        background-image: url(../../../_asset/images/common/arrow-left.svg);
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+      }
+      .slick-next {
+        right: calc(10%);
+      }
+    }
+
+    .MainInteriorImgbox {
+      img {
+        padding: initial;
+        width: 100%;
+      }
+    }
+    .MainInteriorTextboxContainer {
+      max-width: 876px;
+      width: 100%;
+      margin: auto;
+    }
+    .MainInteriorTextbox {
+      .MainInteriorTextboxTopRow {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+
+        .number {
+          font-family: "NotoSerifCJKkr";
+          font-size: 25px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #d7af98;
+        }
+        .morebttn {
+          align-items: center;
+          display: flex;
+
+          a:-webkit-any-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+          .moretext {
+            margin-right: 11px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: 2.4px;
+            text-align: left;
+            color: #0e1215;
+          }
+        }
+      }
+
+      .titletext {
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        // line-height: 3.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #444444;
+        margin-bottom: 15px;
+      }
+      .titletextbottom {
+        font-family: NotoSansCJKkr;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #999999;
+      }
+    }
+    .slick-dots {
+      bottom: -40px;
+    }
+  }
+}

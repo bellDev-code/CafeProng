@@ -1,0 +1,211 @@
+.MainCaptivateContainer {
+  display: flex;
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: #444444;
+  }
+  a:visited {
+    color: #444444;
+  }
+  a:hover {
+    color: #444444;
+  }
+  .MainCaptivateTitleBox {
+  }
+  .MainCaptivateBox {
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding-top: 152px;
+    padding-bottom: 90px;
+  }
+  .MainCaptivateAboutText {
+    font-family: "NotoSerifCJKkr";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.43;
+    letter-spacing: normal;
+    color: #d7af98;
+  }
+  .MainCaptivateTheText {
+    font-family: "NotoSerifCJKkr";
+    font-size: 45px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0e1215;
+  }
+  .MainCaptivateTextBox {
+    display: flex;
+  }
+  .MainCaptivateOneText {
+    font-size: 11px;
+    font-weight: 600;
+    padding-right: 52px;
+  }
+  .MainCaptivateOneTextTitle {
+    font-family: "NotoSerifCJKkr";
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.73;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #0e1215;
+  }
+  .MainCaptivateOneTextBox {
+    font-size: 12.5px;
+    font-weight: 100;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0e1215;
+    padding-bottom: 20px;
+  }
+  .MainCaptivateOneTextMoreBox {
+  }
+  ////////////////////////@extend
+  .MainCaptivateOneText1 {
+    // display: none;
+    font-size: 11px;
+    font-weight: 600;
+    padding-right: 15px;
+  }
+  .MainCaptivateOneTextTitle1 {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 3.73;
+    letter-spacing: 2.2px;
+    text-align: left;
+    color: #0e1215;
+  }
+  .MainCaptivateOneTextBox1 {
+    font-size: 12.5px;
+    font-weight: 100;
+    line-height: 1.64;
+    width: 200px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0e1215;
+    padding-bottom: 20px;
+  }
+  .MainCaptivateOneTextMoreBox1 {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainCaptivateContainer {
+    display: flex;
+    .MainCaptivateTitleBox {
+    }
+    .MainCaptivateBox {
+      display: flex;
+      flex-direction: row;
+      flex-direction: initial;
+      flex-wrap: wrap;
+      padding-left: 15px;
+      max-width: 1024px;
+      margin: auto;
+      padding-top: initial;
+      padding-bottom: 30px;
+    }
+
+    .MainCaptivateTheText {
+      display: flex;
+      width: initial;
+      height: initial;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.16;
+      text-align: left;
+      color: #0e1215;
+      position: relative;
+      padding-right: 22vw;
+      padding-bottom: 30px;
+
+      .MainCaptivateAboutText {
+        z-index: -1;
+        // width: 400px;
+        // height: 104px;
+        opacity: 0.65;
+        -webkit-text-stroke: 0.1px rgba(153, 153, 153, 0.65);
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1.13;
+        text-align: ri;
+        color: rgba(255, 255, 255, 0.65);
+        position: absolute;
+        top: -55px;
+        left: 0px;
+      }
+    }
+    .MainCaptivateTextBox {
+      display: flex;
+    }
+    .MainCaptivateOneText {
+      font-size: 11px;
+      font-weight: 600;
+      padding-right: 15px;
+    }
+    .MainCaptivateOneTextTitle {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 3.73;
+      letter-spacing: 2.2px;
+      text-align: left;
+      color: #0e1215;
+    }
+    .MainCaptivateOneTextBox {
+      font-size: 12.5px;
+      font-weight: 100;
+      line-height: 1.64;
+      width: initial;
+      letter-spacing: normal;
+      text-align: left;
+      color: #0e1215;
+      padding-bottom: 20px;
+    }
+    .MainCaptivateOneTextMoreBox {
+    }
+
+    //////////////////////////
+    .MainCaptivateOneText1 {
+      display: none;
+      font-size: 11px;
+      font-weight: 600;
+      padding-right: 15px;
+    }
+    .MainCaptivateOneTextTitle1 {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 3.73;
+      letter-spacing: 2.2px;
+      text-align: left;
+      color: #0e1215;
+    }
+    .MainCaptivateOneTextBox1 {
+      font-size: 12.5px;
+      font-weight: 100;
+      line-height: 1.64;
+      width: 200px;
+      letter-spacing: normal;
+      text-align: left;
+      color: #0e1215;
+      padding-bottom: 20px;
+    }
+    .MainCaptivateOneTextMoreBox1 {
+    }
+  }
+}

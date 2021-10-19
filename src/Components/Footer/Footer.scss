@@ -1,0 +1,232 @@
+.FooterWrap {
+  padding: 0 30px;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 324px;
+  border-top: solid 1px;
+  display: flex;
+  .Mobile{
+    br{
+      display: none;
+    }
+  }
+  .FooterContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    color: #333333;
+  }
+  .FooterTopBox{
+    display: flex;
+    flex-direction: row;
+  }
+  .FirstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+  }
+  .FirstSectionTopBox {
+    max-width: 198px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: #333333;
+    }
+  }
+  .logoimgbox {
+    max-width: 58px;
+    filter: brightness(0);
+    > img {
+      width: 100%;
+    }
+  }
+  .SnsLinks {
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    line-height: 2;
+    font-size: 11px;
+  }
+  .FirstSectionBottomBox {
+    font-weight: 400;
+    margin-top: 45px;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+  .SecondSection {
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    color: #333333;
+  }
+  .SecondSectionTopBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 1.1px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .InfoTop_tell_TextBox {
+    margin-bottom: 50px;
+  }
+
+  .ThirdSection {
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    color: #333333;
+  }
+  .ThirdSectionTopBox {
+    color: #333333;
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 1.1px;
+    text-align: right;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    a:-webkit-any-link {
+      color: #333333;
+      cursor: pointer;
+      text-decoration: unset;
+    }
+    a:hover {
+      text-decoration: line-through;
+      text-decoration-color: #333333;
+    }
+    .item.active {
+      text-decoration-line: line-through;
+      text-decoration-color: #333333;
+    }
+    .InfoTopTextBox{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  .reverse{
+    flex-direction: row-reverse;
+  }
+  .FooterContainer2{
+    display:block;
+    margin-top: 30px;
+    align-self: center;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .FooterWrap {
+    .FooterContainer{
+      max-width: 950px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+  .FooterWrap{
+    .FooterContainer{
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width:870px){
+  .FooterWrap{
+    height: 250px;
+    .FooterContainer{
+      max-width: 700px;
+    }
+    .FirstSectionTopBox{
+      max-width: 150px;
+    }
+    .FirstSectionBottomBox{
+      margin-top: 33px;
+    }
+    .InfoTop_tell_TextBox{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px) {
+  .FooterWrap{
+    height: 200px;
+    align-items: center;
+    .FooterContainer{
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .FirstSectionBottomBox{
+      display: none;
+    }
+    .FirstSection{
+      flex: initial;
+    }
+    .SecondSection{
+      height: initial;
+      flex: initial;
+    }
+    .ThirdSection{
+      display: none;
+    }
+    .InfoTop_tell_TextBox{
+      margin-bottom: 15px;
+    }
+    .SecondSectionTopBox{
+      text-align: right;
+      flex: 2;
+    }
+    .FirstSectionTopBox{
+      max-width: initial;
+    }
+    .logoimgbox{
+      margin-right: 30px;
+    }
+    .Mobile{
+      br{
+        display: inline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:380px){
+  .FooterWrap{
+    .FooterContainer{
+      flex-direction: column;
+    }
+    .SecondSection{
+      width: 100%;
+    }
+    .SecondSectionTopBox{
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 15px;
+    }
+    .InfoTop_tell_TextBox{
+      margin-bottom: initial;
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width:330px){
+  .FooterWrap{
+    display: none;
+  }
+}

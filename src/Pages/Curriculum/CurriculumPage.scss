@@ -1,0 +1,787 @@
+.CurriculumTitleContainer {
+    .CurriculumTitleBox {
+      max-width: 1024px;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 50px 0 85px;
+    }
+    .CurriculumTitleRight {
+      text-align: right;
+    }
+    .CurriculumTitleLeft {
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.6;
+      letter-spacing: 7.5px;
+      color: #333;
+      text-align: left;
+    }
+    .CurriculumTitleRight {
+      flex: 1;
+      font-family: Noto Sans KR;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.85;
+      letter-spacing: normal;
+      color: #333;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .CurriculumTitleContainer {
+      .CurriculumTitleBox {
+       max-width: 950px;
+      }
+      .CurriculumTitleRight{
+        font-size: 12px;
+      }
+    }
+  }
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .CurriculumTitleContainer{
+      .CurriculumTitleBox{
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .CurriculumTitleContainer{
+      .CurriculumTitleBox{
+        max-width: 700px;
+      }
+    }
+  }
+  //미디어쿼리 분기점 Mobile 
+  @media screen and (max-width:767px) {
+    .CurriculumTitleContainer{
+      margin: 0 30px;
+      .CurriculumTitleBox{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: initial;
+      }
+      .CurriculumTitleRight{
+        font-size: 13px;
+        line-height: 1.65;
+        padding-top: 10px;
+      }
+      .CurriculumTitleLeft{
+        font-size: 22px;
+        line-height: 1.3;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px)  {
+    .CurriculumTitleContainer{
+      margin: 0 30px;
+      .CurriculumTitleLeft{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+
+  .CurriculumTopContainer {
+    .CurriculumTopBox {
+      max-width: 1026px;
+      margin: auto;
+    }
+    .OurStoryTextBox{
+      display: flex;
+      flex-direction: row;
+      padding: 45px 0 110px;
+    }
+    .Title{
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+      line-height: 1;
+    }
+    .ImgBox{
+      width: 100%;
+    }
+    .SubText{
+      flex: 1;
+      font-family: Noto Sans KR;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.85;
+      letter-spacing: normal;
+      text-align: left;
+      color: #6a6868;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .CurriculumTopContainer {
+      .CurriculumTopBox{
+        max-width: 950px;
+      }
+      .SubText{
+        font-size: 12px;
+      }
+    }
+  }
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .CurriculumTopContainer{
+      .CurriculumTopBox{
+        max-width: 800px;
+      }
+      .SubText{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .CurriculumTopContainer{
+      .CurriculumTopBox{
+        max-width: 700px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Mobile
+  @media screen and (max-width:767px){
+    .CurriculumTopContainer{
+      margin: 0 30px;
+      .CurriculumTopBox{
+        margin-top: 42px;
+        margin-bottom: 80px;
+      }
+      .OurStoryTextBox{
+        padding-top: 40px;
+        padding-bottom: initial;
+        flex-direction: column;
+        a{
+          br{
+            display: none;
+          }
+        }
+      }
+      .ImgBox{
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .Title{
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
+      .SubText{
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    .CurriculumTopContainer{
+      .CurriculumTopBox{
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:350px) {
+    .CurriculumTopContainer{
+      .Title{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .CurriculumLectureContainer{
+    margin: 0 30px;
+    .CurriculumLectureMain{
+      max-width: 1026px;
+      margin: auto;
+    }
+    .ContentsBox{
+      display: flex;
+    }
+    .RightBox{
+      flex: 1;
+      margin-right: 30px;
+    }
+    .LeftBox{
+      flex: 1;
+    }
+    .Title{
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.88;
+      padding: 45px 0;
+      border-bottom: 2px solid #333333;
+    }
+    .ContentsList{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .RightContents{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 80px;
+      border-bottom: 1px solid #333333;
+    }
+    .LeftContents{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-bottom: 1px solid #333333;
+      height: 64px;
+    }
+    .ListTitle{
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: #333333;
+    }
+    .QText{
+      flex: 3;
+      font-family: Noto Sans KR;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: right;
+      color: #585858;
+      margin: 8px 0 120px;
+    }
+    .ListText{
+      flex: 3;
+      font-family: Noto Sans KR;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 2.17;
+      letter-spacing: normal;
+      text-align: left;
+      color: #585858;
+    }
+  }
+  
+  @media screen and (max-width:1100px) {
+    .CurriculumLectureContainer{
+      .CurriculumLectureMain{
+        max-width: 950px;
+      }
+    }
+  }
+
+  .CurriculumEducationContainer{
+    .CurriculumEducationMain{
+        max-width: 1026px;
+        margin: auto;
+    }
+    .ContentsList{
+        display: flex;
+        flex-direction: column;
+    }
+    .ContentsBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        &:nth-child(1){
+            border-bottom: 1px solid #333;
+        }
+    }
+    .Title{
+        font-family: Noto Sans KR;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+    }
+    .Text{
+        font-family: Noto Sans KR;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.85;
+        letter-spacing: normal;
+        text-align: right;
+        color: #2e2e2e;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .CurriculumEducationContainer {
+        .CurriculumEducationMain{
+            max-width: 950px;
+        }
+        .Text{
+            font-size: 12px;
+        }
+    }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+    .CurriculumEducationContainer{
+      .CurriculumEducationMain{
+        max-width: 800px;
+      }
+    }
+  }
+  
+@media screen and (max-width:870px){
+    .CurriculumEducationContainer{
+        .CurriculumEducationMain{
+            max-width: 700px;
+        }
+    }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:767px){
+    .CurriculumEducationContainer{
+        margin: 0 30px;
+      .ContentsBox{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 100%;
+        padding: 20px 0;
+        height: initial;
+        border-bottom: 1px solid #a1a1a1;
+        &:nth-last-child(1){
+          border-bottom: 1px solid #a1a1a1;
+        }
+      }
+      .Title{
+        font-size: 22px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+        flex: initial;
+        padding-top: initial;
+      }
+      
+      .Text{
+        text-align: left;
+        font-size: 13px;
+        br{
+          display: none;
+        }
+      }
+   
+    }
+    .CurriculumLectureContainer{
+      .RightContents,.LeftContents{
+        .ListText{
+          font-size: 10px;
+          line-height: 1.8;
+        }
+        .ListTitle{
+          flex:2 1;
+          font-size: 12px;
+        }
+      }
+      .QText{
+        font-size: 10px;
+        line-height: 1.8;
+      }
+      .RightContents{
+        height: 100px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:400px) {
+    .CurriculumEducationContainer{
+      .Text{
+        line-height: 1.7;
+        font-size: 13px;
+      }
+      .Title{
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+    }
+    .CurriculumLectureContainer{
+      .RightContents,.LeftContents{
+        .ListText{
+          font-size: 8px;
+        }
+        .ListTitle{
+          flex:2 1;
+          font-size: 10px;
+        }
+      }
+      .QText{
+        font-size: 8px;
+      }
+      .RightContents{
+        height: 100px;
+      }
+    }
+  }
+  @media screen and (max-width:300px) {
+    .CurriculumEducationContainer{
+      .Text{
+        line-height: 1.7;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .CurriculumImgContainer{
+    .CurriculumImgMain{
+      max-width: 1024px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 0 82px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr 1fr);
+      gap: 25px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .CurriculumImgContainer {
+      .CurriculumImgMain{
+        max-width: 950px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .CurriculumImgContainer{
+      .CurriculumImgMain{
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .CurriculumImgContainer{
+      .CurriculumImgMain{
+        max-width: 700px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Mobile 
+  @media screen and (max-width:767px) {
+    .CurriculumImgContainer{
+      margin: 0 30px;
+      .CurriculumImgMain{
+        padding: 30px 0 40px;
+        grid-template-columns: initial;
+        img{
+          height: 150px;
+          object-fit: cover;
+          object-position: bottom;
+        }
+      }
+    }
+  }
+
+
+  .CurriculumVideoWrapper {
+    max-width: 1024px;
+    margin : auto;
+    width : 100%;
+    
+    
+    
+    .CurriculumVideoContainer{
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+    .CurriculumVideoContainer iframe,
+    .CurriculumVideoContainer object,
+    .CurriculumVideoContainer embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .CurriculumVideoWrapper{
+        max-width: 950px;
+        width: 100%;
+    }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+    .CurriculumVideoWrapper{
+        max-width: 800px;
+    }
+}
+  
+@media screen and (max-width:870px){
+    .CurriculumVideoWrapper{
+        max-width: 700px;
+    }
+}
+//미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px){
+  .CurriculumnVideo{
+    margin: 0 30px;
+
+  }
+}
+
+.CurriculumMenuContainer {
+  .CurriculumMenuBox {
+    max-width: 1026px;
+    width: 100%;
+    margin: auto;
+  }
+  .CurriculumMenuTextBox {
+    font-family: Noto Sans KR;
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .MenuTitle {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  .MenuText {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #333333;
+  }
+  .ContentsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ContentsBox{
+    border-top: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 492px;
+    width: 100%;
+    height: 100px;
+    &:nth-child(n+7):nth-child(-n+8){
+      border-bottom: 1px solid #333;
+    }
+  }
+  .Title{
+    flex: 1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #615f5f;
+  }
+  .Text{
+    flex: 1.5;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #615f5f;
+  }
+}
+
+.Reasoncontainer{
+  .ReasonMain{
+    max-width: 1026px;
+    margin: auto;
+    margin-bottom: 120px;
+  }
+  .ReasonTitlebox{
+    padding: 130px 0 60px;
+  }
+  .Reasontitle{
+    font-family: Montserrat;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  }
+  .ReasonListbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ReasonTextBox{
+    display: flex;
+    height: 130px;
+    flex-direction: row;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 19px 0 25px;
+  }
+  .ReasonBox{
+    display: flex;
+    flex-direction: column;
+    margin-right: 21px;
+    width: 100%;
+    &:nth-last-child(1){
+      margin-right: initial;
+    }
+  }
+  .ReasonImg{
+    margin-bottom: 40px;
+    img{
+      width: 100%;
+    }
+  }
+  .ReasonTitle_map{
+    flex: 1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+  .ReasonText{
+    flex: 2;
+    font-family: Noto Sans KR;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.91;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Reasoncontainer {
+    .ReasonMain{
+      max-width: 950px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+  .Reasoncontainer{
+    .ReasonMain{
+      max-width: 800px;
+    }
+    .ReasonTextBox{
+      flex-direction: column;
+      height: 160px;
+    }
+    .ReasonTitle_map{
+      padding-bottom: 10px;
+      flex: initial;
+      br{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:870px){
+  .Reasoncontainer{
+    .ReasonMain{
+      max-width: 700px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width:767px) {
+  .Reasoncontainer{
+    margin: 0 30px;
+    .ReasonMain{
+      margin-bottom: initial;
+    }
+    .ReasonTitlebox{
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .ReasonListbox{
+      flex-direction: column;
+    }
+    .ReasonBox{
+      margin: initial;
+      margin-bottom: 20px;
+      max-width: initial;
+    }
+    .ReasonImg{
+      height: 130px;
+      flex: 1;
+      margin-bottom: initial;
+      margin-bottom: 20px;
+      img{
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+      }
+    }
+    .ReasonTextBox{
+      flex: 2.5;
+      height: 100%;
+      padding: 20px 0;
+    }
+    .ReasonText{
+      font-size: 13px;
+      line-height: 1.65;
+    }
+  }
+}
+@media screen and (max-width:500px){
+  .Reasoncontainer{
+    .Reasontitle{
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

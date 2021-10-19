@@ -1,0 +1,59 @@
+.IngredientsTitleContainer {
+  .IngredientsTitleBox {
+    max-width: 1024px;
+    height: 143px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .IngredientsTitleRight {
+    text-align: right;
+  }
+  .IngredientsTitleLeft {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 5.4px;
+    text-align: left;
+    color: #444444;
+    flex: 1 1;
+    font-family: "Montsarrt";
+  }
+  .IngredientsTitleRight {
+    text-align: right;
+    line-height: 1.45;
+    font-size: 11px;
+    font-weight: 100;
+    color: #999999;
+    flex: 1 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .IngredientsTitleContainer {
+    .IngredientsTitleBox {
+      height: 120px;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0;
+      margin: 0 20px 20px 20px;
+    }
+    .IngredientsTitleRight {
+      text-align: start;
+    }
+    .IngredientsTitleLeft {
+      text-align: left;
+      font-size: 18px;
+    }
+    .IngredientsTitleRight {
+      text-align: start;
+      font-size: 13px;
+      br {
+        display: none;
+      }
+    }
+  }
+}

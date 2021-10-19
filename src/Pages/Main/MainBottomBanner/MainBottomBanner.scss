@@ -1,0 +1,162 @@
+.MainBottomBannerContainer{
+    font-family: serif;
+   
+    width: 100%;
+    background-color: #d7af98;
+    text-align: center;
+    color: #0e1215;
+
+    a{
+        text-decoration: none;
+    }
+    a:Link{
+        color:#ffffff;
+    }
+    a:visited{
+        color:#ffffff;
+    }
+    a:hover{
+        color:#ffffff;
+    }
+
+    .MainBottomBannerTextBox{
+        
+        .MainBottomBannerTopText{
+            font-family: 'NotoSerifCJKkr';
+            padding-top: 74px;
+            padding-bottom: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0e1215;
+
+        }
+
+        .MainBottomBannerMiddleText{
+            font-family: 'NotoSerifCJKkr';
+            font-size: 45px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.16;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0e1215;
+            margin-bottom : 16px;
+
+        }
+        
+        .MainBottomBannerBottomText{
+            font-family: 'NotoSansCJKkr-Thin';
+            font-size: 16px;
+            font-weight: 100;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0e1215;
+            margin-bottom: 40px;
+
+        }
+        .MainBottomBannerImgBox{
+            max-width : 200px;
+            width : 100%;
+            justify-content: center;
+            padding-bottom: 64px;
+            display: flex;
+            margin : auto;
+            justify-content: center;
+            a{
+                max-width : 200px;
+                width : 100%;
+            }
+
+            .MainBottomBannerImgBoxText{
+                
+                font-size: 14px;
+                padding-right: 10px;
+               
+            }
+            .MainBottomBannerImgBoxImg{
+                    img{
+                        filter: brightness(19);
+                        padding-bottom: 4px;
+                    }
+            }
+           
+
+        }
+        
+    }
+
+}
+
+
+@media screen and (max-width : 570px){
+    .MainBottomBannerContainer{
+   
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+    
+        .MainBottomBannerTextBox{
+            padding: 0px 20px 0px;
+            margin-bottom: initial;
+            margin-top: 30px;
+            .MainBottomBannerTopText{
+                font-size: 12px;
+                padding-top: 45px;
+                padding-bottom: 10px;
+                text-align: center;
+                font-weight: 300;
+                letter-spacing: 1.3px;
+    
+            }
+    
+            .MainBottomBannerMiddleText{
+                font-size: 28px;
+                padding-bottom: 20px;
+                max-width: 220px;
+                font-weight: 600;
+                margin: auto;
+                text-align: center;
+    
+            }
+            
+            .MainBottomBannerBottomText{
+                font-weight: 500;
+                font-size: 12px;
+                padding-bottom: 30px;
+                margin-bottom: initial;
+                text-align: center;
+    
+            }
+            .MainBottomBannerImgBox{
+                padding-bottom: 35px;
+                display: flex;
+                justify-content: center;
+                text-align: -webkit-center;
+    
+                .MainBottomBannerImgBoxText{
+                    font-size: 13px;
+                    padding-right: 10px;
+                    text-align: left;
+                   
+                }
+                .MainBottomBannerImgBoxImg{
+                        img{
+                            filter: brightness(19);
+                            padding-bottom: 4px;
+                        }
+                }
+               
+    
+            }
+            
+        }
+    
+    }
+}

@@ -1,0 +1,44 @@
+.c-animate-hide {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(100%);
+}
+.c-animate-show {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(0);
+}
+.back-to-up-default-text {
+  color: #333333 !important;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 6px;
+}
+
+.back-to-up-default {
+  box-shadow: none !important;
+}
+
+.base-back-to-up {
+  // display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .base-back-to-up {
+    display: initial;
+    position: fixed;
+    bottom: 30px !important;
+    left: 20px !important;
+    width: 40px;
+    height: 40px;
+  }
+}

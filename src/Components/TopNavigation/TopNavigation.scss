@@ -1,0 +1,255 @@
+.TopNavigationContainer {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: solid 1px #333333;
+  .TopNavigationContainerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    height: 100px;
+    width: 100%;
+    position: relative;
+  }
+  .Logo {
+    max-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+  .MenuIcon {
+    width: initial !important;
+    height: initial !important;
+  }
+}
+////////////////////////////@extend/* Position and sizing of burger button */
+.test:hover {
+  color: #333333;
+}
+.bm-burger-button {
+  //메뉴 안보이게하기
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  outline: none;
+  width: 23px;
+  button {
+    outline: none;
+  }
+}
+.menu-item {
+  color: #444444;
+  font-weight: bold;
+  text-decoration-line: unset;
+  outline: none !important;
+}
+.bm-cross-button {
+  position: absolute;
+  width: 40px !important;
+  height: 40px !important;
+  right: 0px !important;
+  top: 0px !important;
+  outline: none !important;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+// .bm-icon {
+//     width: 22px !important;
+//     height: auto !important;
+// }
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 512px !important;
+  z-index: 2;
+  top: 0px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fdfdfd;
+  padding: 7.5em 3.5em 0;
+  font-size: 1.15em;
+}
+// .menu-item.active{
+//   font-weight : 500;
+
+// }
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0 0.8em;
+  line-height: 64px;
+  height: 95%;
+  font-family: "Montserrat";
+  font-size: 20px;
+  :hover {
+    text-decoration-line: line-through;
+    text-decoration-color: #333333;
+  }
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #444444;
+  font-weight: 500;
+  text-decoration-line: unset;
+  outline: none !important;
+  :hover {
+    text-decoration: line-through;
+    text-decoration-color: #333333;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  // display: none;
+  // background: rgba(0, 0, 0, 0.3);
+  display: absolute;
+  left: 0px;
+  top: 0px;
+}
+.menu-item.active {
+  outline: none;
+  text-decoration-line: line-through;
+}
+.menu-item:hover {
+  color: #333333;
+}
+.bm-item.active {
+  text-decoration-line: line-through;
+  text-decoration-color: #333333;
+}
+
+.SNSLinksBox {
+  display: flex !important;
+  flex-wrap: wrap;
+  max-width: 193px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  justify-content: space-between;
+  padding-top: 30px;
+  .SnsName {
+    font-family: Montsarrt;
+    text-decoration: none;
+    text-decoration-line: none;
+    a {
+      text-decoration-line: none;
+      color: #999999;
+      font-weight: normal;
+    }
+    a:hover {
+      text-decoration-line: line-through;
+      text-decoration-color: #999999;
+      color: #999999;
+      font-weight: normal;
+    }
+  }
+}
+.SNSLinksBox:hover {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .TopNavigationContainer {
+    .TopNavigationContainerBox{
+      max-width: 950px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Tablet 
+@media screen and (max-width:1023px){
+  .TopNavigationContainer{
+    .TopNavigationContainerBox{
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width:870px){
+  .TopNavigationContainer{
+    .TopNavigationContainerBox{
+      max-width: 700px;
+    }
+  }
+}
+
+//미디어쿼리 분기점 Mobile 
+@media screen and (max-width:767px){
+  .TopNavigationContainer{
+    .Logo{
+      max-width: 65px;
+    }
+    .TopNavigationContainerBox{
+      height: 80px;
+      margin: 0 30px;
+    }
+  }
+  .bm-menu-wrap {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width:500px){
+  .bm-menu-wrap {
+    width: 300px !important;
+  }
+  .bm-menu{
+    padding: 4.5em 1.5em 0;
+  }
+}
+@media screen and (max-width:370px){
+  .bm-menu-wrap {
+    width: 250px !important;
+  }
+}

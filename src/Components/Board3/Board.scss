@@ -1,0 +1,169 @@
+.BoardContainer {
+  .imgContainer {
+    position: relative;
+    height: 281px;
+    img {
+      height: 100% !important;
+    }
+    > span {
+      height: 100%;
+      .skeletonImg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+  .Board3Box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .BoardContents {
+    display: flex;
+    flex-direction: column;
+  }
+  .BoardData {
+    display: flex;
+    flex-direction: column;
+  }
+  .LineBox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 30px;
+    gap: 40px;
+    border-bottom: 1px solid #e3e5e9;
+    .SubText {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1;
+      text-align: left;
+      color: #0e1215;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:nth-child(1) {
+      border-top: 2px solid #444;
+    }
+  }
+  .BoxList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    flex: 1;
+    align-items: center;
+    height: 60px;
+  }
+  .BoardDescBox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .Title {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #444444;
+  }
+  .DescImg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr 1fr);
+    padding: 30px 0;
+    gap: 10px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .Desc {
+    font-family: Noto Sans KR;
+    font-size: 11.5px;
+    font-weight: 100;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+    padding-bottom: 70px;
+    padding-top: 30px;
+  }
+  .BoardBtn {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    border-top: 1px solid #e3e5e9;
+    border-bottom: 1px solid #e3e5e9;
+  }
+  .TitleBox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 3fr);
+    align-items: center;
+  }
+  .NextBoxList {
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    flex-direction: row;
+    align-items: center;
+  }
+  .NextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flecx-start;
+    border-bottom: 1px solid #e3e5e9;
+    margin-bottom: 120px;
+  }
+  .NextMain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    padding: 0 30px;
+    border-bottom: 1px solid #e3e5e9;
+    &:nth-last-child(1) {
+      border-bottom: initial;
+    }
+  }
+  .clickable {
+    cursor: pointer;
+  }
+}
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width: 767px) {
+  .BoardContainer {
+    .Place {
+      display: none;
+    }
+    .LineBox {
+      grid-template-columns: repeat(1, 1fr 1fr);
+      gap: 20px;
+    }
+    .DescImg {
+      grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    }
+    .NextMain {
+      grid-template-columns: repeat(1, 1fr 1fr);
+    }
+    .NextBoxList {
+      grid-template-columns: repeat(1, 1fr 1fr);
+    }
+    .Desc {
+      font-size: 14px;
+      padding-top: 15px;
+      padding-bottom: 50px;
+      color: #333;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .BoardContainer {
+    .DescImg {
+      grid-template-columns: repeat(1, 1fr 1fr);
+    }
+  }
+}

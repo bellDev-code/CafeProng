@@ -1,0 +1,29 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .left-arrow, .right-arrow{
+        cursor: pointer;
+    }
+    .page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        
+        .select{
+            background-color: chocolate;
+        }
+
+        >div{
+            cursor: pointer;
+            width: 29px;
+            height: 29px;
+            align-self: center;
+            text-align: center;
+            border: 1px solid #222222;
+        }
+    }
+}

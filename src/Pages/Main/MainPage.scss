@@ -1,0 +1,698 @@
+.Main_topcontainer {
+    .Main_Box{
+      padding-top: 40px;
+      max-width: 1024px;
+      margin: auto;
+    }
+    .Topbanner_Text {
+      display: flex;
+      padding-bottom: 42px;
+    }
+    .Reason_en_box {
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 25px;
+      line-height: 1.88;
+      font-weight: 500;
+      text-align: left;
+      color: #333333;
+    }
+    .Reason_ko_box {
+      flex: 1;
+      padding-top: 10px;
+      font-size: 13px;
+      font-family: 'NOTO SANS KR';
+      font-weight: 300;
+      line-height: 1.87;
+      text-align: left;
+      color: #333333;
+    }
+    .Main_Imagebox {
+      width: 100%;
+    }
+    .Reason_interial {
+      display: flex;
+      padding: 35px 0 110px 0;
+    }
+    .Reason_interial_en {
+      flex: 1;
+      font-size: 16px;
+      font-family: 'Montserrat';
+      line-height: 1.88;
+      color: #333333;
+      font-weight: 500;
+    }
+    .Reason_inteial_text {
+      flex: 1;
+      line-height: 1.85;
+      font-size: 13px;
+      font-family: 'Noto Sans KR';
+      font-weight: 300;
+      text-align: left;
+      color: #333333;
+    }
+  }
+  .Efforts_container{
+    .Efforts_TextBox{
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .Main_topcontainer {
+      .Main_Box{
+        max-width: 950px;
+      }
+      .Reason_ko_box{
+        font-size: 12px;
+      }
+      .Reason_inteial_text{
+        font-size: 12px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .Main_topcontainer{
+      .Main_Box{
+        max-width: 800px;
+      }
+      .Reason_ko_box{
+        br{
+          display: none;
+        }
+      }
+      .Reason_inteial_text{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:870px){
+    .Main_topcontainer{
+      .Main_Box{
+        max-width: 700px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Mobile
+  @media screen and (max-width:767px){
+    .Main_topcontainer{
+      margin: 0 30px;
+      .Main_Box{
+        padding-top: 30px;
+      }
+      .Main_Imagebox{
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .Topbanner_Text{
+        flex-direction: column;
+      }
+      .Reason_ko_box{
+        font-size: 13px;
+        line-height: 1.65;
+      }
+      .Reason_en_box{
+        font-size: 22px;
+        br{
+          display: none;
+        }
+      }
+      .Reason_interial{
+        flex-direction: column;
+        padding: 40px 0 80px 0;
+      }
+      .Reason_inteial_text{
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    .Main_topcontainer{
+      .Reason_en_box{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .Reason_interial{
+        padding: 30px 0 50px 0;
+      }
+      .Topbanner_Text{
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .MainBranding_container {
+    .MainBranding_Box{
+      max-width: 1024px;
+      margin: auto;
+    }
+    .Branding_Wrap {
+      display: flex;
+      padding-bottom: 120px;
+      padding-top: 50px;
+    }
+    .Branding_title_en {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 1.88;
+      font-weight: 500;
+      color: #333333;
+      text-align: left;
+      padding-bottom: 55px;
+    }
+    .Branding_text_ko {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.85;
+      text-align: left;
+      color: #333333;
+      font-family: Noto Sans KR;
+    }
+    .Branding_textbox {
+      flex: 1;
+    }
+    .Branding_Imagebox {
+      flex: 1;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .MainBranding_container{
+      .MainBranding_Box{
+        max-width: 950px;
+      }
+      .Branding_text_ko{
+        font-size: 12px;
+      }
+    }
+  }
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .MainBranding_container{
+      .MainBranding_Box{
+        max-width: 800px;
+      }
+    }
+  }
+  @media screen and (max-width:870px){
+    .MainBranding_container{
+      .MainBranding_Box{
+        max-width: 700px;
+      }
+      .Branding_text_ko{
+        max-width: 280px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Mobile
+  @media screen and (max-width:767px){
+    .MainBranding_container{
+      margin: 0 30px;
+      .Branding_Imagebox{
+        img{
+          height: 200px;
+          object-fit: cover;
+          object-position: bottom;
+        }
+      }
+      .Branding_Wrap{
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 80px;
+      }
+      .Branding_textbox{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+      }
+      .Branding_title_en{
+        padding-bottom: 10px;
+        br{
+          display: none;
+        }
+      }
+      .Branding_text_ko{
+        max-width: initial;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    .MainBranding_container{
+      .Branding_Wrap{
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .MainAboutBanner_container {
+    .MainAboutBanner_Box{
+      max-width: 1024px;
+      margin: auto;
+    }
+    .Why_Wrap {
+      padding-top: 50px;
+      display: flex;
+      padding-bottom: 120px;
+    }
+    .Why_textbox {
+      flex: 1;
+    }
+    .Why_title_en {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 1.88;
+      font-weight: 500;
+      color: #333333;
+      text-align: left;
+      padding-bottom: 55px;
+    }
+    .Why_text_ko {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.85;
+      text-align: left;
+      color: #333333;
+      font-family: Noto Sans KR;
+    }
+    .Why_Imagebox {
+      flex: 1;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .MainAboutBanner_container{
+      .MainAboutBanner_Box{
+        max-width: 950px;
+      }
+      .Why_text_ko{
+        font-size: 12px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .MainAboutBanner_container{
+      .MainAboutBanner_Box{
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .MainAboutBanner_container{
+      .MainAboutBanner_Box{
+        max-width: 700px;
+      }
+      .Why_text_ko{
+        max-width: 290px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Mobile
+  @media screen and (max-width:767px){
+    .MainAboutBanner_container{
+      margin: 0 30px;
+      .Why_Imagebox{
+        img{
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .Why_Wrap{
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 80px;
+      }
+      .Why_textbox{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+      }
+      .Why_title_en{
+        padding-bottom: 10px;
+        br{
+          display: none;
+        }
+      }
+      .Why_text_ko{
+        max-width: initial;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    }
+  }
+  @media screen and (max-width:500px) {
+    .MainAboutBanner_container{
+      .Why_Wrap{
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+
+  .ProngTeam_container {
+    margin: 0 30px;
+    .ProngTeam_Box{
+      max-width: 1024px;
+      margin: auto;
+    }
+    .Team_Titlebox {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .Team_title_area {
+      font-family: Montserrat;
+      font-size: 25px;
+      line-height: 1.36;
+      font-weight: normal;
+      color: #333333;
+    }
+    .Team_Listbox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .Team_List {
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      border-top: solid 1px #333333;
+      padding: 25px 0 35px;
+      &:nth-last-child(1){
+        border-bottom: 1px solid #333;
+      }
+      &:nth-last-child(2){
+        border-bottom: 1px solid #333;
+      }
+    }
+    .Team_Title {
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: #333333;
+      padding-top: 3px;
+    }
+    .Team_Text {
+      flex: 1.4;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 2;
+      text-align: left;
+      color: #333333;
+      font-family: Noto Sans KR;
+    }
+  }
+  .MuiAccordion-rounded {
+    box-shadow: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+  
+  
+  @media screen and (max-width: 1100px){
+    .ProngTeam_container{
+      .ProngTeam_Box{
+        max-width: 950px;
+      }
+      .Team_List{
+        max-width: 455px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .ProngTeam_container{
+      .ProngTeam_Box{
+        max-width: 800px;
+      }
+      .Team_List{
+        max-width: 385px;
+        padding: 23px 0 30px;
+      }
+    }
+  }
+  @media screen and (max-width:870px){
+    .ProngTeam_container{
+      .ProngTeam_Box{
+        max-width: 700px;
+      }
+      .Team_List{
+        max-width: 335px;
+        flex-direction: column;
+      }
+      .Team_Title{
+        padding-bottom: 10px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:767px){
+    .ProngTeam_container{
+      .Team_List{
+        max-width: 100%;
+        padding: 20px 0;
+        height: 130px;
+        &:nth-last-child(2){
+          border-bottom: initial;
+        }
+  
+      }
+      .Team_Titlebox{
+        padding: 50px 0;
+      }
+      .Team_title_area{
+        font-size: 22px;
+      }
+      .Team_Title{
+        line-height: 1;
+        flex: initial;
+        padding-top: initial;
+      }
+      .Team_Text{
+        font-size: 13px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    .ProngTeam_container{
+      .Team_title_area{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .Team_Titlebox{
+        padding: 40px 0;
+      }
+    }
+  }
+  
+  @media screen and (max-width:400px) {
+    .ProngTeam_container{
+      .Team_Text{
+        line-height: 1.7;
+        font-size: 13px;
+      }
+    }
+  }
+  @media screen and (max-width:300px) {
+    .ProngTeam_container{
+      .Team_title_area{
+        font-size: 18px;
+      }
+      .Team_Titlebox{
+        padding: 30px 0;
+      }
+      .Team_Text{
+        line-height: 1.7;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .Efforts_container {
+    margin: 0 30px;
+    .Efforts_Main{
+      max-width: 1024px;
+      margin: auto;
+    }
+    .Efforts_Titlebox {
+      padding-top: 115px;
+      padding-bottom: 45px;
+    }
+    .Efforts_title {
+      font-family: Montserrat;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 1.55;
+      text-align: left;
+      color: #333333;
+    }
+    .Efforts_Listbox {
+      display: flex;
+    }
+    .Efforts_Box {
+      display: flex;
+      flex-direction: column;
+      max-width: 325px;
+      width: 100%;
+      margin: 10px;
+      &:nth-child(1){
+        margin-left: initial;
+      }
+      &:nth-last-child(1){
+        margin-right: initial;
+      }
+    }
+    .Efforts_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      > img {
+        width: 100%;
+      }
+    }
+    .Efforts_TextBox {
+      display: flex;
+      height: 112px;
+      padding: 17px 0 30px 0;
+      border-top: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+    }
+    .Efforts_Title_map {
+      flex: 1;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: #333333;
+    }
+    .Efforts_Text {
+      flex: 2;
+      font-size: 11px;
+      font-weight: 300;
+      font-family: 'Noto Sans KR';
+      line-height: 1.91;
+      text-align: left;
+      color: #333333;
+      letter-spacing: -0.4px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .Efforts_container{
+      .Efforts_Main{
+        max-width: 950px;
+      }
+    }
+  }
+  
+  //미디어쿼리 분기점 Tablet 
+  @media screen and (max-width:1023px){
+    .Efforts_container{
+      .Efforts_Main{
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:870px){
+    .Efforts_container{
+      .Efforts_Main{
+        max-width: 720px;
+      }
+      .Efforts_TextBox{
+        flex-direction: column;
+        height: 150px;
+      }
+      .Efforts_Title_map{
+        padding-bottom: 10px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  //미디어쿼리 분기점 Mobile
+  @media screen and (max-width:767px) {
+    .Efforts_container{
+      .Efforts_Titlebox{
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .Efforts_Listbox{
+        flex-direction: column;
+      }
+      .Efforts_Box{
+        margin: initial;
+        margin-bottom: 20px;
+        max-width: initial;
+      }
+      .Efforts_img{
+        height: 130px;
+        flex: 1;
+        margin-bottom: initial;
+        margin-bottom: 20px;
+        img{
+          object-fit: cover;
+          object-position: center;
+          height: 100%;
+        }
+      }
+      .Efforts_TextBox{
+        flex: 2.5;
+        height: 100%;
+        padding: 20px 0;
+      }
+      .Efforts_Text{
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    }
+  }
+  @media screen and (max-width:500px){
+    .Efforts_container{
+      .Efforts_title{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }

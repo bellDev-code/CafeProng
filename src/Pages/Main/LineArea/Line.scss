@@ -1,0 +1,74 @@
+.Line_container {
+  display: flex;
+  border-top: solid 2px #333333;
+  border-bottom: solid 1px #333333;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  .Line_Title {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+  }
+  .Line_Wrap {
+    display: flex;
+  }
+  .Line_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: Montserrat;
+    text-align: right;
+    color: #333333;
+  }
+  .Line_Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+}
+//미디어쿼리 분기점 Mobile
+@media screen and (max-width: 767px) {
+  .Line_container {
+    border-top: solid 1px;
+    .Line_Title {
+      font-size: 12px;
+    }
+    .Line_text {
+      font-size: 11px;
+    }
+    .Line_Title_Team {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 1.88;
+      font-weight: 500;
+      color: #333333;
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .Line_container{
+    height: 35px;
+    .Line_Title {
+      font-size: 11px;
+    }
+    .Line_text {
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width:400px) {
+  .Line_container{
+    height: 35px;
+    .Line_Title {
+      font-size: 11px;
+    }
+    .Line_text {
+      display: none;
+    }
+  }
+}
